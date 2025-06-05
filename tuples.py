@@ -1,18 +1,19 @@
+
 # ==========================================
 # Voorbeeld opdracht:
 # Declareer twee tuples met de namen ‘tuple_een’ en ‘tuple_twee’.
 # tuple_een krijgt de waarden 1, 2 en 3. tuple_twee krijgt de waarden 4, 5 en 6.
 # Zorg dat je een tuple krijgt met de waarden 1, 2, 3, 4, 5 en 6. Onthoud dat tuples onveranderlijk zijn.
 # ==========================================
-
-tuple_een = (1, 2, 3)
-tuple_twee = (4, 5, 6)
-
-# je zal een nieuwe tuple variabele moeten declareren. De tuples die al gedeclareerd zijn kunnen niet worden aangepast
-# (zoals een list kan worden aangepast met append, insert en remove).
-combined_tuple = tuple_een + tuple_twee
-print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
-
+#
+# tuple_een = (1, 2, 3)
+# tuple_twee = (4, 5, 6)
+#
+# # je zal een nieuwe tuple variabele moeten declareren. De tuples die al gedeclareerd zijn kunnen niet worden aangepast
+# # (zoals een list kan worden aangepast met append, insert en remove).
+# combined_tuple = tuple_een + tuple_twee
+# print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
+#
 
 
 # ==========================================
@@ -23,18 +24,22 @@ print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
 #
 # Verwachte uitkomst:  a b c
 # ==========================================
-
-
+#
+# tuple_values = ("b", "c", "a")
+# # print(tuple(reversed(tuple_values)))
+# print(tuple_values[2], tuple_values[0], tuple_values[1])
 
 # ==========================================
 # Opdracht 2:
-# Maak de lijst ‘getal_kwadraat_paar’ aan voor getallen 1 tot en met 5 waarin elk element bestaat uit een tuple die het getal en het bijbehorende kwadraat bevat.
+# Maak de lijst ‘getal_kwadraat_paar’ aan voor getallen 1 tot en met 5 waarin
+# elk element bestaat uit een tuple die het getal en het bijbehorende kwadraat bevat.
 # Gebruik een list comprehension.
 #
 # Verwachte uitkomst: [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 # ==========================================
-
-
+#
+# getal_kwadraat_paar = [(x, x**2) for x in range(1, 6)]
+# print(getal_kwadraat_paar)
 
 # =========================================
 # Opdracht 3:
@@ -44,3 +49,6 @@ print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
 #
 # Verwachte uitkomst: (5, 4, 3, 2, 1)
 # ==========================================
+
+tuple_count = (1, 2, 3, 4, 5)
+print(tuple(reversed(tuple_count)))
